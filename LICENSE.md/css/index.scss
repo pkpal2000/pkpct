@@ -1,0 +1,488 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap ;
+}
+
+div#navbar {
+  position: relative;
+  background-color: rgb(245, 245, 245);
+  height: 10vh;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 0.3vh solid #0000ff;
+
+  div#logo {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(0, -50%);
+    height: 7vh;
+    width: auto;
+    box-sizing: border-box;
+    border: 0.4vh solid #0000ff;
+    border-radius: 1vh;
+
+    &:hover {
+      box-shadow: 0 0 0.3vh #000000;
+      transition-duration: 0.3s;
+    }
+
+    img {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+    }
+  }
+
+  div#navbar-item-container {
+    display: flex;
+    height: 8vh;
+    width: auto;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    a {
+      text-decoration: none;
+
+      div.navbar-item {
+        padding: 0 2.5vh;
+        height: 100%;
+        line-height: 7.6vh;
+        font-size: 2.2vh;
+        box-sizing: border-box;
+        border: 0.4vh solid #0000ff;
+        margin-right: 2.5vh;
+        border-radius: 1vh;
+        color: blue;
+        text-transform: uppercase;
+
+        &:hover {
+          color: white;
+          background-color: blue;
+          box-shadow: 0 0 0.3vh #000000;
+          transition-duration: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+div#intro {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  
+  h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 17.5vh;
+    font-size: 12.5vh;
+    color: white;
+    text-transform: uppercase;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height : 100%;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 4vh;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Courier Prime', monospace;
+  }
+
+  div#background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+
+    div#image-cover {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+      background-color: rgba(0, 0, 255, 0.4);
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      z-index: -4;
+    }
+  }
+
+  a#go-down-link {
+    text-decoration: none;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    div#go-down {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 10vh;
+      width: 10vh;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border: 0.5vh solid #ffffff;
+
+      &:hover {
+        box-shadow: 0 0 1.5vh #fff;
+        transition-duration: 0.2s;
+
+        img {
+          animation-name: bounce;
+          animation-duration: 1s;
+        }
+
+        @keyframes bounce {
+          0% {
+            top: 50%;
+          }
+        
+          50% {
+            top: 40%;
+          }
+        
+          100% {
+            top: 50%;
+          }
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 100%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+div#aboutme {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+
+  div#aboutme-title {
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: rgba(0, 0, 255, 1);
+    font-size: 4.5vh;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 8vh;
+    height: 8vh;
+    width: 100%;
+  }
+
+  div#aboutme-selfpic {
+    position: absolute;
+    top: 50%;
+    left: 12.5%;
+    transform: translate(0, -50%);
+
+    img {
+      transform: rotate(-1deg)
+    }
+  }
+
+  div#aboutme-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 45vh;
+    line-height: 7.5vh;
+    font-size: 3vh;
+    padding: 2vh 2vh;
+    width: 45%;
+
+    b {
+      color: #0000ff;
+    }
+
+    .bullet-point {
+      color: #0000ff;
+    }
+  }
+}
+
+div#courses {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh; //165vh
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.75);
+
+  div#courses-title {
+    position: absolute;
+    top: 2.5vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: rgb(245, 245, 245);
+    font-size: 4.5vh;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 8vh;
+    height: 8vh;
+    width: 100%;
+  }
+
+  div#commerce {
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 75vh;
+
+    div#commerce-title {
+      position: absolute;
+      top: 2.5vh;
+      left: 0;
+      height: 5vh;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+
+      h4 {
+        font-size: 3.5vh;
+        color: white;
+      }
+    }
+    
+    div.commerce-courses {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: rgb(245, 245, 245);
+      height: 15vh;
+      width: 80%;
+      border-radius: 2vh;
+      color: #0000ff;
+      border: 0.4vh solid black;
+      box-sizing: border-box;
+      cursor: default;
+
+      &:hover {
+        box-shadow: 0 0 2.5vh rgb(245, 245, 245);
+        transition-duration: 0.25s;
+      }
+
+      div.course-name {
+        position: absolute;
+        top: 1vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 4vh;
+        font-size: 3vh;
+        line-height: 4vh;
+        text-align: center;
+        width: 100%;
+      }
+
+      div.course-info {
+        position: absolute;
+        top: 7vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 8vh;
+        font-size: 3.5vh;
+        line-height: 4vh;
+        text-align: center;
+        font-size: 2.5vh;
+        width: 90%;
+      }
+    }
+
+    div#xixiicom {
+      top: 10vh;
+    }
+
+    div#bachelors {
+      top: 30vh;
+    }
+
+    div#ca {
+      top: 50vh;
+    }
+  }
+  
+  div#science {
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 75vh;
+
+    div#science-title {
+      position: absolute;
+      top: 2.5vh;
+      left: 0;
+      height: 5vh;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+
+      h4 {
+        font-size: 3.5vh;
+        color: white;
+      }
+    }
+    
+    div.science-courses {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: rgb(245, 245, 245);
+      height: 15vh;
+      width: 80%;
+      border-radius: 2vh;
+      color: #0000ff;
+      border: 0.4vh solid black;
+      box-sizing: border-box;
+      cursor: default;
+
+      &:hover {
+        box-shadow: 0 0 2.5vh rgb(245, 245, 245);
+        transition-duration: 0.25s;
+      }
+
+      div.course-name {
+        position: absolute;
+        top: 1vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 4vh;
+        font-size: 3vh;
+        line-height: 4vh;
+        text-align: center;
+        width: 100%;
+      }
+
+      div.course-info {
+        position: absolute;
+        top: 7vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 8vh;
+        font-size: 3.5vh;
+        line-height: 4vh;
+        text-align: center;
+        font-size: 2.5vh;
+        width: 90%;
+      }
+    }
+
+    div#ixx {
+      top: 10vh;
+    }
+
+    div#xixiisci {
+      top: 30vh;
+    }
+
+    div#engexam {
+      top: 50vh;
+
+      div.course-name {
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+div#contactme {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+
+  div#contactme-title {
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: rgba(0, 0, 255, 0.75);
+    font-size: 4.5vh;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 8vh;
+    height: 8vh;
+    width: 100%;
+  }
+
+  div#contactme-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 75%;
+    width: 95%;
+    transform: translate(-50%, -50%);
+    color: #0000ff;
+    font-size: 3vh;
+    padding: 2vh 5vh;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 7.25vh;
+    font-weight: 600;
+
+    a {
+      color: #0000ff;
+    }
+  }
+}
