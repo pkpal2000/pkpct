@@ -1,0 +1,551 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div#navbar {
+  position: relative;
+  background-color: whitesmoke;
+  height: 10vh;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 0.3vh solid #0000ff;
+}
+
+div#navbar div#logo {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  height: 7vh;
+  width: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0.4vh solid #0000ff;
+  border-radius: 1vh;
+}
+
+div#navbar div#logo:hover {
+  -webkit-box-shadow: 0 0 0.3vh #000000;
+          box-shadow: 0 0 0.3vh #000000;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+div#navbar div#logo img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+div#navbar div#navbar-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8vh;
+  width: auto;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+div#navbar div#navbar-item-container a {
+  text-decoration: none;
+}
+
+div#navbar div#navbar-item-container a div.navbar-item {
+  padding: 0 2.5vh;
+  height: 100%;
+  line-height: 7.6vh;
+  font-size: 2.2vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0.4vh solid #0000ff;
+  margin-right: 2.5vh;
+  border-radius: 1vh;
+  color: blue;
+  text-transform: uppercase;
+}
+
+div#navbar div#navbar-item-container a div.navbar-item:hover {
+  color: white;
+  background-color: blue;
+  -webkit-box-shadow: 0 0 0.3vh #000000;
+          box-shadow: 0 0 0.3vh #000000;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+div#intro {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+}
+
+div#intro h1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  height: 17.5vh;
+  font-size: 12.5vh;
+  color: white;
+  text-transform: uppercase;
+}
+
+div#intro h1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+div#intro h2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-size: 4vh;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Courier Prime', monospace;
+}
+
+div#intro div#background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+div#intro div#background div#image-cover {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -2;
+  background-color: rgba(0, 0, 255, 0.4);
+}
+
+div#intro div#background img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -4;
+}
+
+div#intro a#go-down-link {
+  text-decoration: none;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+div#intro a#go-down-link div#go-down {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0.5vh solid #ffffff;
+}
+
+div#intro a#go-down-link div#go-down:hover {
+  -webkit-box-shadow: 0 0 1.5vh #fff;
+          box-shadow: 0 0 1.5vh #fff;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+div#intro a#go-down-link div#go-down:hover img {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+div#intro a#go-down-link div#go-down img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div#aboutme {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+div#aboutme div#aboutme-title {
+  position: absolute;
+  top: 2.5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: blue;
+  font-size: 4.5vh;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 8vh;
+  height: 8vh;
+  width: 100%;
+}
+
+div#aboutme div#aboutme-selfpic {
+  position: absolute;
+  top: 50%;
+  left: 12.5%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+div#aboutme div#aboutme-selfpic img {
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+}
+
+div#aboutme div#aboutme-info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  height: 45vh;
+  line-height: 7.5vh;
+  font-size: 3vh;
+  padding: 2vh 2vh;
+  width: 45%;
+}
+
+div#aboutme div#aboutme-info b {
+  color: #0000ff;
+}
+
+div#aboutme div#aboutme-info .bullet-point {
+  color: #0000ff;
+}
+
+div#courses {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.75);
+}
+
+div#courses div#courses-title {
+  position: absolute;
+  top: 2.5vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: whitesmoke;
+  font-size: 4.5vh;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 8vh;
+  height: 8vh;
+  width: 100%;
+}
+
+div#courses div#commerce {
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 100%;
+  height: 75vh;
+}
+
+div#courses div#commerce div#commerce-title {
+  position: absolute;
+  top: 2.5vh;
+  left: 0;
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+div#courses div#commerce div#commerce-title h4 {
+  font-size: 3.5vh;
+  color: white;
+}
+
+div#courses div#commerce div.commerce-courses {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-color: whitesmoke;
+  height: 15vh;
+  width: 80%;
+  border-radius: 2vh;
+  color: #0000ff;
+  border: 0.4vh solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: default;
+}
+
+div#courses div#commerce div.commerce-courses:hover {
+  -webkit-box-shadow: 0 0 2.5vh whitesmoke;
+          box-shadow: 0 0 2.5vh whitesmoke;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
+div#courses div#commerce div.commerce-courses div.course-name {
+  position: absolute;
+  top: 1vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  height: 4vh;
+  font-size: 3vh;
+  line-height: 4vh;
+  text-align: center;
+  width: 100%;
+}
+
+div#courses div#commerce div.commerce-courses div.course-info {
+  position: absolute;
+  top: 7vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  height: 8vh;
+  font-size: 3.5vh;
+  line-height: 4vh;
+  text-align: center;
+  font-size: 2.5vh;
+  width: 90%;
+}
+
+div#courses div#commerce div#xixiicom {
+  top: 10vh;
+}
+
+div#courses div#commerce div#bachelors {
+  top: 30vh;
+}
+
+div#courses div#commerce div#ca {
+  top: 50vh;
+}
+
+div#courses div#science {
+  position: absolute;
+  top: 90vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 100%;
+  height: 75vh;
+}
+
+div#courses div#science div#science-title {
+  position: absolute;
+  top: 2.5vh;
+  left: 0;
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+div#courses div#science div#science-title h4 {
+  font-size: 3.5vh;
+  color: white;
+}
+
+div#courses div#science div.science-courses {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-color: whitesmoke;
+  height: 15vh;
+  width: 80%;
+  border-radius: 2vh;
+  color: #0000ff;
+  border: 0.4vh solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: default;
+}
+
+div#courses div#science div.science-courses:hover {
+  -webkit-box-shadow: 0 0 2.5vh whitesmoke;
+          box-shadow: 0 0 2.5vh whitesmoke;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
+div#courses div#science div.science-courses div.course-name {
+  position: absolute;
+  top: 1vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  height: 4vh;
+  font-size: 3vh;
+  line-height: 4vh;
+  text-align: center;
+  width: 100%;
+}
+
+div#courses div#science div.science-courses div.course-info {
+  position: absolute;
+  top: 7vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  height: 8vh;
+  font-size: 3.5vh;
+  line-height: 4vh;
+  text-align: center;
+  font-size: 2.5vh;
+  width: 90%;
+}
+
+div#courses div#science div#ixx {
+  top: 10vh;
+}
+
+div#courses div#science div#xixiisci {
+  top: 30vh;
+}
+
+div#courses div#science div#engexam {
+  top: 50vh;
+}
+
+div#courses div#science div#engexam div.course-name {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div#contactme {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+div#contactme div#contactme-title {
+  position: absolute;
+  top: 2.5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: rgba(0, 0, 255, 0.75);
+  font-size: 4.5vh;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 8vh;
+  height: 8vh;
+  width: 100%;
+}
+
+div#contactme div#contactme-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 75%;
+  width: 95%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #0000ff;
+  font-size: 3vh;
+  padding: 2vh 5vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  line-height: 7.25vh;
+  font-weight: 600;
+}
+
+div#contactme div#contactme-info a {
+  color: #0000ff;
+}
+/*# sourceMappingURL=index.css.map */
